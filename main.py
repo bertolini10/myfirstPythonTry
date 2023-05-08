@@ -73,13 +73,19 @@ class AWSObj:
 
 
 
+
+#TESTS HERE
 if __name__ == '__main__':
-    result = AWSObj('a', 'pt', ['xxx','cccxxx'])
+    result = AWSObj('amazonb', 'pt', ['xxx','cccxxx'])
     result.__setitem__('xxx','ccc')
     result.__getitem__('ccc')
-    result.__delitem__('xxx')
+    result.get('xxx')
+    result.put('xxx','ccvvv')
     print(result.__contains__('xxx'))
+    result.keys('c')
     result.items('c')
+    result.__delitem__('xxx')
+    result.pop('ccvvv')
 
 
 
